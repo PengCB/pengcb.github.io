@@ -1,0 +1,44 @@
+{
+  "prod_today": [
+    ["javascript:;","冰滴咖啡"],
+    ["javascript:;","曼特宁咖啡"],
+    ["javascript:;","一级哥伦比亚"],
+    ["javascript:;","巴西山多士"],
+    ["javascript:;","美式咖啡"],
+    ["javascript:;","低因咖啡"]
+  ],
+  "prod_hot": [
+    ["javascript:;","test/img/prod_index_1.jpg","冰滴咖啡"],
+    ["javascript:;","test/img/prod_index_2.jpg","曼特宁咖啡"],
+    ["javascript:;","test/img/prod_index_3.jpg","一级哥伦比亚"],
+    ["javascript:;","test/img/prod_index_4.jpg","巴西山多士"],
+    ["javascript:;","test/img/prod_index_5.jpg","美式咖啡"],
+    ["javascript:;","test/img/prod_index_6.jpg","低因咖啡"]
+  ],
+  "latest_news": {
+    "menu":[
+      ["javascript:;","冰滴咖啡"],
+      ["javascript:;","曼特宁咖啡"],
+      ["javascript:;","一级哥伦比亚"],
+      ["javascript:;","巴西山多士"],
+      ["javascript:;","美式咖啡"],
+      ["javascript:;","低因咖啡"]
+    ],
+    "new":[
+      ["javascript:;","平安夜Coffee Home咖啡爆棚！"],
+      ["javascript:;","真有圣诞苹果派呀！"],
+      ["javascript:;","圣诞节狂欢！"],
+      ["javascript:;","迎元旦抽奖结果出来啦！"],
+      ["javascript:;","欢庆元旦"],
+      ["javascript:;","恭贺新禧"]
+    ],
+    "info":[
+      ["javascript:;","喝咖啡有助降低炎症，改善心脏健康"],
+      ["javascript:;","优质咖啡豆+卡萨帝咖啡机=一杯好咖啡"],
+      ["javascript:;","咖啡加盐？苦咸口味更带感！"],
+      ["javascript:;","深度挖掘普洱咖啡质量特性"],
+      ["javascript:;","咖啡如何改变世界"],
+      ["javascript:;","咖啡要怎么喝才健康？"]
+    ]
+  }
+}
