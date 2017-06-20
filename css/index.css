@@ -67,14 +67,10 @@ body {  min-height: 100%; background: #0e0e0e;  }
 .box6{
   padding-top:50px;
 }
-
-.box2 .box-title,
-.box3 .box-title,
-.box4 .box-title,
-.box5 .box-title,
-.box6 .box-title {
+.box-title {
   margin-bottom: 20px;
   text-align: center;
+  line-height: 30px;
 }
 
 
@@ -496,10 +492,44 @@ body {  min-height: 100%; background: #0e0e0e;  }
 
 
 /* box5 */
-.my-prod{
-  margin-left: 25%;
+.my-prod {
+  font-size: 0;
+  text-align: justify;
 }
-
+.my-prod:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.my-prod li{
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  height:400px;
+  font-size: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.my-prod li h3 {
+  font-size: 1.2em;
+  line-height: 20px;
+}
+.my-prod li div {
+  overflow: hidden;
+}
+.my-prod li img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+.my-prod li.active img,
+.my-prod li:hover img{
+  filter: none;
+}
 
 
 

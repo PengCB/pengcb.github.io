@@ -75,4 +75,29 @@
     .on('mouseleave', function() {$(this).find('.over-img').fadeOut(500);});
 
 
+  /** box5 **/
+  $('.my-prod li')
+    .hover(
+      function(){
+        var $li = $(this);
+        var $img = $li.find('img');
+
+        var li_h = parseInt($li.css('height'));
+        var img_h = parseInt($img.css('height'));
+        var minus = -(img_h-li_h+20);
+
+        if(minus<0) {
+          $img.stop().animate({'margin-top': minus}, 1000);
+        }
+      },
+      function(){
+        var $li = $(this);
+        var $img = $li.find('img');
+        $img.stop().animate({'margin-top': 0}, 1000);
+      }
+    )
+    .on('mouseenter', function() {
+      $(this).addClass('active').siblings('.active').removeClass('active');
+    });
+
 })();
