@@ -644,4 +644,26 @@ body {  min-height: 100%; background: #0e0e0e;  }
     max-width: none;
   }
 
+  /* box5 */
+  .my-prod {
+    padding-bottom:50px;
+  }
+  .my-prod li {
+    width:48%;
+    height:auto;
+  }
+  .my-prod li img{
+    filter: none;
+  }
+
+  /* box6 */
+  .about-me{
+    padding-bottom:50px;
+  }
+
+
+  /* footer */
+  .footer{
+    padding:20px;
+  }
 }
