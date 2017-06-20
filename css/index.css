@@ -529,11 +529,11 @@ body {  min-height: 100%; background: #0e0e0e;  }
 }
 .my-prod li.active img,
 .my-prod li:hover img{
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;
-  filter: none;
+  -webkit-filter: inherit;
+  -moz-filter: inherit;
+  -ms-filter: inherit;
+  -o-filter: inherit;
+  filter: inherit;
 }
 
 
