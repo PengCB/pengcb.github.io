@@ -22,7 +22,7 @@ body {  min-height: 100%; background: #0e0e0e;  }
 /* public */
 #main {
   margin:0 auto;
-  width: 1000px;
+  max-width: 1000px;
 }
 .box {
   position: relative;
@@ -101,9 +101,9 @@ body {  min-height: 100%; background: #0e0e0e;  }
   background: #8d663d;
 }
 #header .contact-way {
-  float: right;
-  margin-top:20px;
-  margin-right:10px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 #header .contact-way li{
   display: inline-block;
@@ -117,8 +117,8 @@ body {  min-height: 100%; background: #0e0e0e;  }
 }
 .menu {
   position: absolute;
-  top:20px;
-  left:10px;
+  top:10px;
+  left:20px;
 }
 .menu-icon {
   border-radius: 5px 0 0 5px;
@@ -199,62 +199,66 @@ body {  min-height: 100%; background: #0e0e0e;  }
 
 
 /* box1 */
-.other-color-bg {
-  position: absolute;
-  right:0;
-  width:75%;
-  height:100%;
+.box1 {
+  font-size: 0;
+  background: linear-gradient(90deg,#010101 25%,#030303 25%);
 }
-.box1-content {
-  position: relative;
-  z-index: 1;
-  width: 100%;
+.my-name-container,
+.my-head-container{
+  display: inline-block;
+  vertical-align: top;
+  padding-top:150px;
+  width: 65%;
   height: 100%;
+  font-size: 1rem;
+}
+.my-name-container{
+  text-align: center;
+}
+.my-head-container {
+  width: 35%;
 }
 .my-name {
-  display: inline-block;
   position: relative;
-  vertical-align: middle;
-  margin:150px 0 0 100px;
-  width: 450px;
-  height:130px;
   text-align: center;
-  line-height: 100px;
   font: 120px "Courier New";
   font-weight: bold;
+  line-height: 150px;
+
 }
 .my-name:before,
 .my-name:after {
   position: absolute;
-  top:0;
+  bottom:60px;
   left:0;
   width:100%;
   color: #88735d;
   font-size: 1.2rem;
   text-align: center;
+  line-height: 1.2rem;
   letter-spacing:5px;
 }
 .my-name:before {
   content: 'Web前端攻城狮';
-  line-height: 150px;
 }
 .my-name:after {
   content: '不断磨爪砺牙，增长知识经验';
-  line-height: 190px;
+  bottom:40px;
 }
 
-.home-head {
+
+.my-head {
   display: inline-block;
   border:5px solid #ccc;
   border-radius:50%;
-  margin-left: 100px;
   width: 200px;
   height: 200px;
-  vertical-align: text-top;
   overflow: hidden;
 }
-.home-head img{
+.my-head img{
+  border-radius:50%;
   width: 100%;
+  overflow: hidden;
 }
 .show-name {
   position: relative;
@@ -376,9 +380,22 @@ body {  min-height: 100%; background: #0e0e0e;  }
   font-size: 1.3em;
 }
 
+.skill-img-list {
+  margin: 30px 0;
+}
+.skill-img-list ul {
+  font-size: 0;
+  text-align: justify;
+}
+.skill-img-list ul:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
 .skill-img-list li {
   display: inline-block;
   width: 100px;
+  font-size: 1rem;
 }
 .skill-img-list img {
   width: 100%;
@@ -478,9 +495,28 @@ body {  min-height: 100%; background: #0e0e0e;  }
 
 
 
+/* box5 */
+.my-prod{
+  margin-left: 25%;
+}
+
+
+
+
+
+
+
+
 /* box6 */
 .about-me {
-
+  margin-left: 25%;
+}
+.about-me span{
+  display: inline-block;
+  width: 30px;
+}
+.about-me b{
+  padding-right:10px;
 }
 
 
@@ -498,3 +534,84 @@ body {  min-height: 100%; background: #0e0e0e;  }
   text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************     响应式     ******************************/
+@media screen and (max-width: 767px) {
+  .box {
+    height: auto;
+  }
+  /* box1 */
+  .box1 {
+    padding-bottom:50px;
+  }
+  .my-name-container,
+  .my-head-container{
+    display: block;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+  }
+  .my-head-container {
+    text-align: center;
+  }
+  .my-name {
+    font-size:80px;
+  }
+  .my-name:before{
+    bottom: 10px;
+  }
+  .my-name:after {
+    bottom: -10px;
+  }
+
+
+  /* box2 */
+  .box2 {
+    text-align: center;
+  }
+
+  .skill-list {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: left;
+  }
+
+  .skill-img-list li {
+    padding-bottom:10px;
+  }
+
+  /* box3 */
+  .experience h3 {
+    float: none;
+    text-align: center;
+  }
+  .experience p {
+    margin: 0;
+  }
+
+
+  /* box4 */
+  .hobby-item {
+    display: block;
+    margin-bottom:10px;
+    max-width: none;
+  }
+
+}

@@ -55,7 +55,7 @@
   );
 
   // 头像显名
-  $('.home-head').hover(
+  $('.my-head').hover(
     function(){$('.show-name').stop().animate({'margin-top':'-60px'});},
     function(){$('.show-name').stop().animate({'margin-top':'0px'});}
   );
